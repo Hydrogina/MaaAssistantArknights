@@ -27,7 +27,7 @@ bool asst::RoguelikeSkillSelectionImageAnalyzer::analyze()
         return false;
     }
 
-    int unknow_index = 0;
+    int unknown_index = 0;
     for (const auto& flag : flags) {
         std::string name = name_analyze(flag.rect);
         auto skills = skill_analyze(flag.rect);
@@ -35,7 +35,7 @@ bool asst::RoguelikeSkillSelectionImageAnalyzer::analyze()
             continue;
         }
         if (name.empty()) {
-            name = "Unknown" + std::to_string(unknow_index++);
+            name = "Unknown" + std::to_string(unknown_index++);
         }
         m_result.emplace(std::move(name), std::move(skills));
     }
