@@ -18,7 +18,25 @@ option_end()
 
 option("paddle_model_type")
 option_end()
+
+-- PaddleOCR Package
 package("PaddleOCR")
+    set_homepage("https://github.com/MistEO/PaddleOCR")
+    set_urls("https://github.com/MistEO/PaddleOCR/archive/refs/tags/${version}.zip")
+    add_versions("2.1.1", "v2.1.1")
+    add_versions("2.1.0", "v2.1.0")
+    add_versions("2.0.0", "v2.0.0")
+    add_versions("1.1.0", "v1.1.0")
+
+    add_deps("cmake")
+    on_download(function (package, opt)
+        -- TODO
+        --  Download the infer model
+    
+    end)
+    on_install(function (package)
+        -- TODO: build with cmake
+    end)
 package_end()
 
 -- Dependencies
