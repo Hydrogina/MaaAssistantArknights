@@ -951,15 +951,11 @@ namespace MeoAsstGui
                 settings.RoguelikeSquad, settings.RoguelikeRoles, settings.RoguelikeCoreChar);
         }
 
-<<<<<<< HEAD
         /// <summary>
         /// Kills emulator.
         /// </summary>
         /// <returns>Whether the operation is successful.</returns>
         public bool killemulator()
-=======
-        public bool killEmulator()
->>>>>>> 2d642fc7 (style. 部分typo修正及翻译修正)
         {
             int pid = 0;
             string port;
