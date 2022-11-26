@@ -1084,32 +1084,23 @@
         ]
     },
     "StageEpisodeToOF": {
-        "algorithm": "OcrDetect",
         "action": "ClickSelf",
-        "cache": false,
-        "text": [
-            "火蓝之心"
-        ],
+        "doc": "进入OF关卡",
         "roi": [
-            0,
-            41,
-            372,
-            627
+            44,
+            185,
+            146,
+            90
         ]
     },
     "OFToOF-Chapter": {
-        "algorithm": "OcrDetect",
         "action": "ClickSelf",
-        "cache": false,
-        "text": [
-            "进入",
-            "活动"
-        ],
+        "doc": "进入OF关卡",
         "roi": [
-            993,
-            439,
-            287,
-            168
+            1040,
+            474,
+            220,
+            102
         ]
     },
     "OF-Chapter2": {
@@ -1132,12 +1123,13 @@
         ]
     },
     "StageOF-1": {
-        "algorithm": "OcrDetect",
         "action": "ClickSelf",
-        "cache": false,
-        "isAscii": true,
-        "text": [
-            "OF-1"
+        "doc": "进入OF-1关卡",
+        "roi": [
+            397,
+            164,
+            526,
+            144
         ]
     },
     "IC-9": {
@@ -5933,7 +5925,8 @@
             244,
             167
         ],
-        "postDelay": 1000,
+        "preDelay": 1000,
+        "postDelay": 2000,
         "next": [
             "BattleSupportUnitFormationSelect"
         ]
@@ -5946,7 +5939,7 @@
             1165,
             75
         ],
-        "postDelay": 1000
+        "postDelay": 2000
     },
     "BattleQuickFormation": {
         "action": "ClickSelf",
